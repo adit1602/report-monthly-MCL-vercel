@@ -2024,7 +2024,7 @@ function renderTransaction() {
 /* ====== HEADER, NAV, BOOT ====== */
 function fillHero() {
   document.getElementById('hdrPeriod').textContent = D.meta.period;
-  const by = D.meta.generated_by ? (' oleh ' + D.meta.generated_by) : '';
+  const by = D.meta.generated_by ? (' oleh ' + D.meta.generated_by) : 'Indra Adityawarman';
   document.getElementById('auditLine').innerHTML =
     'Periode ' + D.meta.period + '<br>Dibuat ' + D.meta.generated_at + by;
   renderPeriodSelector();
